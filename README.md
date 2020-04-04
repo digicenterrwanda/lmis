@@ -1,3 +1,30 @@
+LMIS
+=========
+LMIS is a website that shows quality labour market statistics used by the Government of Rwanda to inform, monitor national employment policies/programs and initiated the creation of a computerized labour managment information system.
+ 
+This LMIS website was developed using TYPO3 Content Management System.
+
+Front-end module
+==================
+The front-end of the website is developed in the following programming languages:
+1. HMTL 5, CSS3 and JavaScript: programming languages used to structure and present
+content, style the HTML content, and add dynamic behavior, store information, and handle
+requests and responses on the website.
+2. Bootstrap 4: front-end framework used to develop a responsive, easier and mobile-first
+website.
+3. XML: markup language used to present and style graphs and charts on the website.
+
+Back-end module
+==================
+1. PHP: TYPO3 content management system is written in PHP which provides users
+extensibility and flexibility providing them with easy management of the content on the
+website.
+2. MySQL: relational database management system for the website used to store all the
+content on the website.
+3. Apache Server: web server used to host or store all the web content on the website.
+Apache delivers the content for a website to a client that requests it.
+
+
 TYPO3 CMS
 =========
 
@@ -103,56 +130,10 @@ provide access to the same communication channels:
 * Mailing Lists (Mail): https://typo3.org/support/mailing-lists/
 * Newsgroups (NNTP): news://lists.typo3.org/
 
-Contributing
-------------
 
-If you want to contribute to the TYPO3 CMS source code, take a look at our
-Contributors Walkthrough and Review System:
-
-* https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/
-* https://review.typo3.org/
-
-The [repository at GitHub](https://github.com/TYPO3/TYPO3.CMS) is a
-synchronized mirror of the primary TYPO3 CMS core git repository:
-
-* https://git.typo3.org/Packages/TYPO3.CMS.git
-
-If you want to file a bug report, maintain your own extension using our
-infrastructure (Git, Issue Tracker, Wiki, etc), take a look at:
-
-* https://forge.typo3.org
-
-Final notes
------------
-
-TYPO3 is said to be one of the most sophisticated PHP / Internet related
-applications available, and the more you play with it, the more you will agree.
-
-Due to the advanced level of the code and functionality, a degree of study,
-time and perseverance is required to fully understand it, and get the best from
-it. You should keep trying, as we say it's definitely worth it. TYPO3 is the
-Enterprise Content Management System "for all".
-
-The GPL license allows for developments that are based upon TYPO3 to also be
-freely available under the GPL. Please remember this, because TYPO3 is about
-"Inspiring People To Share". If you are making money with TYPO3 you can donate
-or become a member of the TYPO3 Association.
-
-By becoming a supporting member, individuals and organisations mainly fund
-core development of TYPO3. The decision about what the funds are used for, is
-made by all members of the Association and the Expert Advisory Board (EAB).
-The decisions will be made transparent to the community and especially the
-supporting members. Your funds will also serve for other purposes as laid
-out in the bylaws.
-
-* Donate: https://typo3.org/donate
-* Become a member of the TYPO3 Association:
-  https://typo3.org/association/membership/levels/
-
-Copyleft
+Copyright
 --------
 
-This document is a part of the TYPO3 project.
+This document was created by Tech Click Ltd.
 
-Written by Nigel Jackson, Ingmar Schlecht, Ernesto Baschny, Michael Stucki,
-Oliver Hader, Ben van 't Ende and others.
+Written by Jeanne Yamfashije, Samuel Ishimwe and others.
