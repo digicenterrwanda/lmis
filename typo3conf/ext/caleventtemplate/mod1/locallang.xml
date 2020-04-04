@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;web_txcaleventtemplateM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Cal event templates</label>
+			<label index="function1">Clone new events</label>
+			<label index="function2">Clone new events</label>
+			<label index="clonenow">Clone Now!</label>
+			<label index="missing_date">FATAL: Cannot clone event: No (valid) date given in input field!</label>
+			<label index="tce_copy_error">FATAL: Error during clone using TCE. Please enable debug capabilities to see details.</label>
+			<label index="start_clone">Starting to clone the event...</label>
+			<label index="missing_template_uid">FATAL: The event template UID has gone.</label>
+			<label index="success">SUCCESS: Event got cloned successfully. New event ID is: </label>
+			<label index="start_clone"></label>
+			<label index="start_clone"></label>
+		</languageKey>
+
+	</data>
+</T3locallang>

@@ -1,0 +1,22 @@
+plugin.tx_bssevents {
+    view {
+        templateRootPaths {
+            10 = {$plugin.tx_bssevents.view.templateRootPath}
+        }
+        partialRootPaths {
+            10 = {$plugin.tx_bssevents.view.partialRootPath}
+        }
+        layoutRootPaths {
+            10 = {$plugin.tx_bssevents.view.layoutRootPath}
+        }
+    }
+    settings {
+        adminGid = {$plugin.tx_bssevents.settings.adminGid}
+        moderatorGid = {$plugin.tx_bssevents.settings.moderatorGid}
+        creatorGid = {$plugin.tx_bssevents.settings.creatorGid}
+
+        creationSpan = {$plugin.tx_bssevents.settings.creationSpan}
+
+        cssFile = {$plugin.tx_bssevents.settings.cssFile}
+    }
+}

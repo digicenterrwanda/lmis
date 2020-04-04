@@ -1,0 +1,47 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_config/Configuration/TypoScript/Config/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_config/Configuration/TypoScript/Fluid/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:site_config/Configuration/TypoScript/TsFile/">
+
+lib.contentElement.partialRootPaths.100 = EXT:site_config/Resources/Private/Partials/Extension/fluid_styled_content/Resources/Private/Partials/
+
+
+# ==============================================
+# FE-Plugin configuration for EXT:news
+# ==============================================
+plugin.tx_news {
+	 #Modify the translation
+	_LOCAL_LANG {
+		default {
+			more-link = Read more...
+		}
+	}
+	settings.list.paginate {
+           
+            insertAbove = false
+            insertBelow = TRUE
+            lessPages = TRUE
+            forcedNumberOfLinks = 5
+            pagesBefore = 2
+            pagesAfter = 2
+        }
+
+
+}
+
+plugin.tx_cookiehint {
+	 #Modify the translation
+	_LOCAL_LANG.de{
+			settings.content.message = Cookies erleichtern die Bereitstellung unserer Dienste. Mit der Nutzung unserer Dienste erklären Sie sich damit einverstanden, dass wir Cookies verwenden. 
+			settings.content.dataprotection = mehr Informationen
+			settings.content.dismiss = OK
+		}
+	}
+}
+
+plugin.tx_indexedsearch._LOCAL_LANG.de {
+   displayResults.next = Weitere Ergebnisse >
+   displayResults = Suchergebnisse %1$s bis %2$s von %3$s
+}
+
+
+

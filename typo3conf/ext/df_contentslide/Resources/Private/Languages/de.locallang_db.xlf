@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-04-18T14:12:55Z">
+		<header>
+			<type>database</type>
+			<description>Language labels for database tables/fields belonging to extension 'df_contentslide'</description>
+			<generator>LFEditor</generator>
+			<authorName>Stefan Galinski</authorName>
+			<authorEmail>stefan@sgalinski.de</authorEmail>
+		</header>
+		<body>
+		<trans-unit id="tt_content.tx_df_contentslide_activate" approved="yes">
+			<source>Enable</source>
+			<target>Aktivieren</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation" approved="yes">
+			<source>Select animation</source>
+			<target>Animation auswählen</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation.fade" approved="yes">
+			<source>Fade</source>
+			<target>Blenden</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation.slideDownwards" approved="yes">
+			<source>Slide downwards</source>
+			<target>Sliding nach unten</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation.slideUpwards" approved="yes">
+			<source>Slide upwards</source>
+			<target>Sliding nach oben</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_contentslide" approved="yes">
+			<source>Expand/Collapse Content</source>
+			<target>Ein- und ausklappbare Inhalte</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout" approved="yes">
+			<source>Select layout</source>
+			<target>Layout auswählen</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout.layout1" approved="yes">
+			<source>Layout 1</source>
+			<target>Layout 1</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout.layout2" approved="yes">
+			<source>Layout 2</source>
+			<target>Layout 2</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout.layout3" approved="yes">
+			<source>Layout 3</source>
+			<target>Layout 3</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_options" approved="yes">
+			<source>Options</source>
+			<target>Optionen</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_options.expanded" approved="yes">
+			<source>Initially expanded</source>
+			<target>Initial aufgeklappt</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_options.withAjax" approved="yes">
+			<source>with AJAX</source>
+			<target>mit AJAX</target>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_useCustomHeader" approved="yes">
+			<source>Use custom header</source>
+			<target>Benutzerdefinierte Überschrift</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

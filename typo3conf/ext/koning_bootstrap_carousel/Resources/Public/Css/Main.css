@@ -1,0 +1,37 @@
+.koning-boostrap-carousel .item {
+    height: 600px;
+    background-repeat: no-repeat;
+}
+.koning-boostrap-carousel .item.cover {
+    background-size: cover;
+}
+.koning-boostrap-carousel .item.contain {
+    background-size: contain;
+}
+.koning-boostrap-carousel .item.left-top {
+    background-position: left top;
+}
+.koning-boostrap-carousel .item.left-center {
+    background-position: left center;
+}
+.koning-boostrap-carousel .item.left-bottom {
+    background-position: left bottom;
+}
+.koning-boostrap-carousel .item.right-top {
+    background-position: right top;
+}
+.koning-boostrap-carousel .item.right-center {
+    background-position: right center;
+}
+.koning-boostrap-carousel .item.right-bottom {
+    background-position: right bottom;
+}
+.koning-boostrap-carousel .item.center-top {
+    background-position: center top;
+}
+.koning-boostrap-carousel .item.center-center {
+    background-position: center center;
+}
+.koning-boostrap-carousel .item.center-bottom {
+    background-position: center bottom;
+}

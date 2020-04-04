@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'caleventtemplate'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_caleventtemplate_templates">cal event template</label>
+			<label index="tx_caleventtemplate_templates.templatetitle">Template title</label>
+			<label index="tx_caleventtemplate_templates.neweventcount">Number of new events per clone</label>
+			<label index="tx_caleventtemplate_templates.templatebaseevent">Base event for template</label>
+			<label index="tx_caleventtemplate_templates.storetopid">Store to fixed PID:</label>
+			<label index="tt_content.list_type_pi1">cal event template</label>
+		</languageKey>
+	</data>
+</T3locallang>

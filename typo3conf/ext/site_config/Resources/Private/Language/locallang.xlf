@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-03-30T10:23:15Z" product-name="website">
+		<header/>
+		<body>
+			<trans-unit id="mobile">
+				<source>Mobil</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

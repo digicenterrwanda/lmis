@@ -1,0 +1,65 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <main>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Main</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <settings.bssEvents.main.output>
+                        <TCEforms>
+                            <label>Default calendar view (list / cal)</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">List (Month)</numIndex>
+                                        <numIndex index="1">list</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">List (Year)</numIndex>
+                                        <numIndex index="1">yearlist</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Calendar</numIndex>
+                                        <numIndex index="1">cal</numIndex>
+                                    </numIndex>
+                                </items>
+                                <size>1</size>
+                                <minitems>1</minitems>
+                                <maxitems>1</maxitems>
+                            </config>
+                        </TCEforms>
+                    </settings.bssEvents.main.output>
+
+                    <settings.bssEvents.main.paging>
+                        <TCEforms>
+                            <label>Max events per list view</label>
+                            <config>
+                                <type>input</type>
+                                <size>10</size>
+                                <eval>trim,int</eval>
+                                <range>
+                                    <lower>1</lower>
+                                    <upper>100</upper>
+                                </range>
+                                <default>10</default>
+                                <slider>
+                                    <step>1</step>
+                                    <width>200</width>
+                                </slider>
+                            </config>
+                        </TCEforms>
+                    </settings.bssEvents.main.paging>
+
+                </el>
+            </ROOT>
+        </main>
+    </sheets>
+</T3DataStructure>

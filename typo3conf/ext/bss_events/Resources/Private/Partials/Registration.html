@@ -1,0 +1,87 @@
+
+{namespace bss=Bermuda\BssEvents\ViewHelpers}
+
+<h4 class="modal-title">
+    <f:translate key="LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_registration.registration" />
+</h4>
+
+<br/>
+
+<div>
+    <f:translate key="LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_registration.standard_text" />
+</div>
+
+<br/>
+
+<f:if condition="{appointment.registration.message}">
+
+    <br/>
+
+    <div class="panel panel-info registration-info">
+        <div class="panel-body" style="position: relative;">
+
+            <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i><f:format.raw>{appointment.registration.message}</f:format.raw>
+
+        </div>
+    </div>
+
+    <br/>
+
+</f:if>
+
+<div class="subscribe-fields">
+
+    <f:form id="bssEventsRegisterForm" extensionName="bssevents" pluginName="P1" controller="Event" action="subscribe" enctype="multipart/form-data" name="subscriber" object="{subscriber}">
+
+        <f:form.textfield property="firstname" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.firstname' />"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.firstname' />" />
+
+        <f:form.textfield property="lastname" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.lastname' />"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.lastname' />" />
+
+        <f:form.textfield property="email" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.email' />" type="email"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.email' />"/>
+
+        <f:form.textfield property="phone" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.phone' />" type="tel"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.phone' />"/>
+
+        <f:form.textfield property="street" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.street' /> / <f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.number' />"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.street' /> / <f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.number' />"/>
+
+        <f:form.textfield property="zip" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.zip' />" style="width: 20%;"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.zip' />"/>
+
+        <f:form.textfield property="city" required="1" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.city' />" style="width: 79%; float: right;"
+                          title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.city' />"/>
+
+        <f:form.textarea property="message" placeholder="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.message' />" rows="6"
+                         title="<f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.message' />"/>
+
+        <f:form.hidden property="appointment" value="{appointment}"/>
+
+        <f:form.button type="submit"><f:translate key='LLL:EXT:bss_events/Resources/Private/Language/locallang_db.xlf:tx_bssevents_subscriber.register' /></f:form.button>
+
+    </f:form>
+
+</div>
+
+<script type="application/javascript">
+    $("#bssEventsRegisterForm").on('submit', function(e) {
+
+        var url = $(this).attr('action');
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: $(this).serialize(),
+            success: function(data)
+            {
+                alert(data['message']);
+                $("#bssEventsRegisterForm").trigger("reset");
+            }
+        });
+
+        e.preventDefault();
+    })
+</script>
+

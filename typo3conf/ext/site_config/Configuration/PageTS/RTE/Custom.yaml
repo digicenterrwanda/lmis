@@ -1,0 +1,57 @@
+####
+# Example of what CKEditor can all bring
+###
+
+# Load default processing options
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+# Minimal configuration for the editor
+editor:
+  config:
+    stylesSet:
+      - { name: 'h2-block-title', element: 'h2', attributes: { 'class': 'block-title' } }
+      - { name: 'complimentary-close', element: 'span', attributes: { 'class': 'complimentary-close' } }
+      - { name: 'author-name', element: 'span', attributes: { 'class': 'author-name' } }
+      - {name: "ul list-style", element: "ul", attributes: {class: "list-style"}}
+      - {name: "p margin-0", element: "p", attributes: {class: "margin-0"}}
+    extraPlugins:
+      - justify
+      - font
+    justifyClasses:
+      - text-left
+      - text-center
+      - text-right
+    contentsCss: [EXT:site_config/Resources/Public/css/docs.css]
+    format_tags: "p;h1;h2;h3;h4;h5"
+    toolbarGroups:
+      - { name: document, groups: [ mode, document, doctools ] }
+      - { name: clipboard, groups: [ clipboard, undo ] }
+      - { name: editing, groups: [ find, selection, spellchecker, editing ] }
+      - { name: forms, groups: [ forms ] }
+      - /
+      - { name: styles, groups: [ styles ] }
+      - { name: basicstyles, groups: [ basicstyles, cleanup ] }
+      - { name: paragraph, groups: [ list, indent, blocks, align, bidi, paragraph ] }
+      - { name: links, groups: [ links ] }
+      - { name: insert, groups: [ insert ] }
+      - /
+      - { name: colors, groups: [ colors ] }
+      - { name: tools, groups: [ tools ] }
+      - { name: others, groups: [ others ] }
+      - { name: about, groups: [ about ] }
+
+    removeButtons:
+      - Underline
+      - Subscript
+      - Superscript
+      - Anchor
+
+      #Available colors in colorbutton:  
+    colorButton_colors: "00A992,88CCCF,FFFFFF"
+
+processing:
+  allowTags:
+    - s

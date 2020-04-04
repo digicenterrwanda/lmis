@@ -1,0 +1,15 @@
+#<INCLUDE_TYPOSCRIPT: source="FILE:EXT:site_config/Configuration/PageTS/RTE.ts">
+
+# TCEFORM.tt_content.header_layout {
+# 	altLabels {
+# 		1 = 1st Heading
+# 		2 = 2nd Heading
+# 		3 = 3rd Heading
+# 		4 = 4th Heading
+# 		5 = 5th Heading
+# 	}
+
+# 	addItems {
+# 		10 = h2 block-title
+# 	}
+# }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2012-10-17T19:30:32Z" product-name="koning_bootstrap_carousel">
+        <header/>
+        <body>
+            <trans-unit id="plugin.title">
+                <source>Bootstrap carousel</source>
+            </trans-unit>
+            <trans-unit id="tt_content.koningbootstrapcarousel_slides">
+                <source>Bootstrap carousel slides</source>
+            </trans-unit>
+
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide">
+                <source>Slide</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.title">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.link">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.link_text">
+                <source>Link text</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual">
+                <source>Visual</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_size">
+                <source>Visual size</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_size.cover">
+                <source>Cover</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_size.contain">
+                <source>Contain</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position">
+                <source>Visual position</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.left-top">
+                <source>Left top</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.left-center">
+                <source>Left center</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.left-bottom">
+                <source>Left bottom</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.right-top">
+                <source>Right top</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.right-center">
+                <source>Right center</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.right-bottom">
+                <source>Right bottom</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.center-top">
+                <source>Center top</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.center-center">
+                <source>Center center</source>
+            </trans-unit>
+            <trans-unit id="tx_koningbootstrapcarousel_domain_model_slide.visual_position.center-bottom">
+                <source>Center bottom</source>
+            </trans-unit>
+
+            <trans-unit id="configuration.show.interval">
+                <source>The amount of time to delay between automatically cycling an item (miliseconds)</source>
+            </trans-unit>
+            <trans-unit id="configuration.show.wrap">
+                <source>Whether the carousel should cycle continuously or have hard stops</source>
+            </trans-unit>
+            <trans-unit id="configuration.show.keyboard">
+                <source>Whether the carousel should react to keyboard events</source>
+            </trans-unit>
+            <trans-unit id="configuration.show.indicators">
+                <source>Show indicators</source>
+            </trans-unit>
+            <trans-unit id="configuration.show.controls">
+                <source>Show previous/next</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

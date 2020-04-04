@@ -1,0 +1,16 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<!--
+	=====================
+		Partials/List/Item.html
+-->
+
+			<div class="new-headline">
+                <n:link newsItem="{newsItem}" settings="{settings}">
+                    <marquee behavior="slide" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                       {newsItem.title}</marquee>
+                </n:link>
+            </div>
+
+</html>

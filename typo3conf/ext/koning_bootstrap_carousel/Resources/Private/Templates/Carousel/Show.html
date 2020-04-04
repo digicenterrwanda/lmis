@@ -1,0 +1,48 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+    <div
+        id="{identifier}"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="{settings.data.interval}"
+        data-wrap="{f:if(condition: '{settings.data.wrap}', then: 'true', else: 'false')}"
+        data-keyboard="{f:if(condition: '{settings.data.keyboard}', then: 'true', else: 'false')}">
+
+        <f:if condition="{settings.data.indicators}">
+            <ol class="carousel-indicators">
+                <f:for each="{slides}" as="slide" iteration="i">
+                    <li data-target="#{identifier}" data-slide-to="{i.index}" class="{f:if(condition: '{i.isFirst}', then: 'active')}"></li>
+                </f:for>
+            </ol>
+        </f:if>
+
+        <div class="carousel-inner" role="listbox">
+            <f:for each="{slides}" as="slide" iteration="i">
+                <div class="item {f:if(condition: '{i.isFirst}', then: 'active')} {slide.visualPosition} {slide.visualSize}" style="background-image: url({f:uri.image(image: slide.visual)});">
+                    <div class="carousel-caption">
+                        <h3>
+                            <f:format.nl2br>{slide.title}</f:format.nl2br>
+                        </h3>
+                        <f:if condition="{slide.link}">
+                            <f:link.typolink parameter="{slide.link}" class="btn btn-default">
+                                {slide.linkText}
+                            </f:link.typolink>
+                        </f:if>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+
+        <f:if condition="{settings.data.controls}">
+            <a class="left carousel-control" href="#{identifier}" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only"><f:translate id="previous" extensionName="KoningBootstrapCarousel" /></span>
+            </a>
+            <a class="right carousel-control" href="#{identifier}" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only"><f:translate id="next" extensionName="KoningBootstrapCarousel" /></span>
+            </a>
+        </f:if>
+    </div>
+</f:section>

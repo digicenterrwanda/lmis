@@ -1,0 +1,36 @@
+{
+  "name": "koninklijke-collective/koning-bootstrap-carousel",
+  "description": "TYPO3 Extension: Carousel with Bootstrap 3.* compliant HTML",
+  "type": "typo3-cms-extension",
+
+  "keywords": [
+    "TYPO3",
+    "CMS",
+    "Koning",
+    "Bootstrap",
+    "Carousel"
+  ],
+  "homepage": "https://github.com/koninklijke-collective/koning_library",
+  "license": "LGPL-3.0+",
+
+  "autoload": {
+    "psr-4": {
+      "Keizer\\KoningBootstrapCarousel\\": "Classes/"
+    }
+  },
+
+  "version": "1.0.0",
+
+  "authors": [
+    {
+      "name": "Jesper Paardekooper",
+      "email": "jesper@koninklijk.io",
+      "homepage": "https://www.grandslam-media.nl"
+    },
+    {
+      "name": "Benjamin Serfhos",
+      "email": "benjamin@koninklijk.io",
+      "homepage": "http://serfhos.com"
+    }
+  ]
+}

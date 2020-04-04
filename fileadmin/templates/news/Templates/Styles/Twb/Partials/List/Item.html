@@ -1,0 +1,684 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+<!--
+  =====================
+    Partials/List/Item.html
+-->
+<n:excludeDisplayedNews newsItem="{newsItem}" />
+
+  
+  <f:if condition="{settings.templateLayout} == 1">
+    <f:then>
+        
+
+        
+        
+	  <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" id="keyindicator_0_RptKeyIndicators_HypLnkKeyIndicatorLink_{iterator.cycle}" class="c-indicators__item">
+ 
+
+<f:if condition="{newsItem.mediaPreviews}">
+              <f:then>
+                <f:media id="keyindicator_0_RptKeyIndicators_ImgLogo_{iterator.cycle}" class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" style="height:58px;width:55px;" />
+              </f:then>
+              <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                  <f:image id="keyindicator_0_RptKeyIndicators_ImgLogo_{iterator.cycle}" class="img-dummy img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" style="height:58px;width:55px;" />
+                </f:if>
+              </f:else>
+            </f:if>
+<span id="keyindicator_0_RptKeyIndicators_LblTitle_{iterator.cycle}" class="title"> {newsItem.title}</span>
+<span class="number">
+<span>
+<f:format.html>{newsItem.teaser}</f:format.html>
+</span>
+</span>
+<span id="keyindicator_0_RptKeyIndicators_LblDescription_{iterator.cycle}" class="desc">
+<f:format.html>{newsItem.bodytext}</f:format.html>
+</span>
+	
+	 </n:link>
+	 </f:then>
+  </f:if>
+
+
+  <f:if condition="{settings.templateLayout} == 2">
+    <f:then>
+	
+		 <li class=" text-center cell pnp__card-shadow col-sm-3" style="visibility: visible;  -webkit-transform: translateY(0) scale(1) transform: translateY(0) scale(1);-webkit-transition: -webkit-transform 0.65s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.65s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; */ /*! transition: transform 0.65s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.65s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; */ " data-sr-id="2">
+				 <div  class="pnp__link-collection-item">
+				 
+				   <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" class="pnp__link-collection-inner">
+    
+				 <div class="col-sm-3">
+				 
+				  <f:if condition="{newsItem.mediaPreviews}">
+              <f:then>
+                <f:media class="circle" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="50" height="50" />
+              </f:then>
+              <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                  <f:image class="circle" src="{settings.list.media.dummyImage}" title="" alt=""  width="50" height="50" />
+                </f:if>
+              </f:else>
+            </f:if>
+			
+				
+				 </div>
+				<div class="col-sm-8"> <h4> {newsItem.title}</h4></div>
+			
+			  </n:link>
+				 </div></li>	
+	
+	
+	
+	
+    </f:then>
+  </f:if>
+
+  <f:if condition="{settings.templateLayout} == 3">
+    <f:then>
+	
+	<li>
+<span class="title">
+      <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+          {newsItem.title}
+        </n:link>
+  </span>
+</li>
+</f:then>
+  </f:if>
+
+    <f:if condition="{settings.templateLayout} == 16">
+    <f:then>
+	<div class="col-md-6">
+	 <div class="tab">
+        <input type="checkbox" id="chck{newsItem.uid}">
+        <label class="tab-label" for="chck{newsItem.uid}">{newsItem.title}</label>
+        <div class="tab-content">
+         <f:format.html>{newsItem.bodytext}</f:format.html>
+        </div>
+      </div>
+	 </div> 
+
+       
+
+    </f:then>
+  </f:if>
+
+   <f:if condition="{settings.templateLayout} == 6">
+    <f:then>
+<div class="col-md-4">
+        <div class="teambox">
+        <a href="#" data-toggle="modal" data-target="#mModal{newsItem.uid}"> 
+
+        <div class="teamPhoto" itemprop="member" itemscope="" itemtype="http://schema.org/members">
+  
+            <f:if condition="{newsItem.mediaPreviews}">
+              <f:then>
+                <f:media class="circle" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+              </f:then>
+              <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                  <f:image class="circle" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+                </f:if>
+              </f:else>
+            </f:if>
+    </div>
+    <div class="teamTxt">
+          <h4 class="et_pb_module_header">{newsItem.title}</h4>
+          <span class="et_pb_member_position">{newsItem.teaser}</span>
+          
+        </div> 
+        </a>
+        </div>
+      </div> 
+<div class="modal fade" id="mModal{newsItem.uid}" role="dialog" style="display: none;z-index: 9999;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content ">
+     
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+             
+          
+         <center> <div class="modal-title" style="font-size:18px;font-family:Lato;font-weight:bold;">{newsItem.title}</div>
+      <div class="post101" style="font-size:16px;color:#055e9a;font-weight:bold">{newsItem.teaser}</div>
+     </center> 
+        </div>
+        <div class="modal-body">
+    <div class="row">
+      <div class="col-md-3">
+     <f:if condition="{newsItem.mediaPreviews}">
+              <f:then>
+                <f:media class="circle" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+              </f:then>
+              <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                  <f:image class="circle" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+                </f:if>
+              </f:else>
+            </f:if>
+      </div>
+      
+      <div class="col-md-9"> 
+
+<div class="team_modal_content" style="font-size:14px;">
+<f:format.html>{newsItem.bodytext}</f:format.html>
+</div> 
+    </div>
+    </div>
+    </div>
+          
+        </div>
+      </div>
+    </div>
+
+    </f:then>
+  </f:if>
+  
+   <f:if condition="{settings.templateLayout} == 19">
+    <f:then>
+<div class="col-md-3">
+        <div class="teambox">
+        <a href="#" data-toggle="modal" data-target="#mModal{newsItem.uid}"> 
+
+        <div class="teamPhoto" itemprop="member" itemscope="" itemtype="http://schema.org/members">
+  
+            <f:if condition="{newsItem.mediaPreviews}">
+              <f:then>
+                <f:media class="circle" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+              </f:then>
+              <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                  <f:image class="circle" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+                </f:if>
+              </f:else>
+            </f:if>
+    </div>
+    <div class="teamTxt">
+          <h4 class="et_pb_module_header">{newsItem.title}</h4>
+          <span class="et_pb_member_position">{newsItem.teaser}</span>
+          
+        </div> 
+        </a>
+        </div>
+      </div> 
+     
+      
+      <div class="modal fade" id="mModal{newsItem.uid}" role="dialog" style="display: none;z-index: 9999;">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content ">
+     
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+             
+          
+         <center> <div class="modal-title" style="font-size:18px;font-family:Lato;font-weight:bold;">{newsItem.title}</div>
+      <div class="post101" style="font-size:16px;color:#055e9a;font-weight:bold">{newsItem.teaser}</div>
+     </center> 
+        </div>
+        <div class="modal-body">
+    <div class="row">
+      <div class="col-md-3">
+     <f:if condition="{newsItem.mediaPreviews}">
+              <f:then>
+                <f:media class="circle" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+              </f:then>
+              <f:else>
+                <f:if condition="{settings.displayDummyIfNoMedia}">
+                  <f:image class="circle" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+                </f:if>
+              </f:else>
+            </f:if>
+      </div>
+      
+      <div class="col-md-9"> 
+
+<div class="team_modal_content" style="font-size:14px;">
+<f:format.html>{newsItem.bodytext}</f:format.html>
+</div> 
+    </div>
+    </div>
+    </div>
+          
+        </div>
+      </div>
+    </div>
+
+    </f:then>
+  </f:if>
+  
+  <f:if condition="{settings.templateLayout} == 7">
+    <f:then>
+ <div class="col-xs-6 col-sm-6 col-md-4">
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+                                    <div class="article-content" style="min-height: 162px;">
+                                        <h5>{newsItem.title}</h5>
+                                        <p>{newsItem.teaser}</p>
+                                        <div class="sp-btn">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">Read More </n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							    </f:then>
+  </f:if> 
+  
+   <f:if condition="{settings.templateLayout} == 8">
+    <f:then>
+ <div class="col-xs-6 col-sm-6 col-md-3">
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+                                    <div class="article-content" style="min-height: 162px;">
+                                        <h5>{newsItem.title}</h5>
+                                        <p>{newsItem.teaser}</p>
+                                        <div class="sp-btn">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">Read More  </n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							    </f:then>
+  </f:if> 
+  
+     <f:if condition="{settings.templateLayout} == 9">
+    <f:then>
+
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+                                    <div class="article-contenthome" >
+                                        <h5>{newsItem.title}</h5>
+                                     {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                                        <div class="sp-btn_about">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">Read More</n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                          
+							    </f:then>
+  </f:if> 
+  
+    <f:if condition="{settings.templateLayout} == 20">
+    <f:then>
+ <div class="col-sm-6">
+                                <div class="article-wrapper_core">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+                                    <div class="article-content" style="min-height: 162px;">
+                                        <h5>{newsItem.title}</h5>
+                                     {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                                        <div class="sp-btncore">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">LEARN MORE </n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                 </div>                
+							    </f:then>
+  </f:if> 
+  
+   <f:if condition="{settings.templateLayout} == 21">
+    <f:then>
+ <div class="col-sm-6">
+                                <div class="article-wrapper_coreblue">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+                                    <div class="article-content" style="min-height: 162px;">
+                                        <h5>{newsItem.title}</h5>
+                                     {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                                        <div class="sp-btncore">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">LEARN MORE  </n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                 </div>                
+							    </f:then>
+  </f:if> 
+  
+  
+   <!--best annualy reports-->
+       <f:if condition="{settings.templateLayout} == 11">
+    <f:then>
+         <div class="col-sm-12 bgreport">
+ <div class="col-sm-8">
+<div class="article-thumb">
+
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	  
+ </div>
+  </div>
+       <div class="col-sm-4 sp-btnd">
+                      <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">                 
+                                  Download
+                      </n:link>     
+                                    </div>
+ </div>
+
+							    </f:then>
+  </f:if> 
+  
+     <!--About mandate-->
+       <f:if condition="{settings.templateLayout} == 12">
+    <f:then>
+ 
+       <div class="col-sm-6" style="padding-right:1px">
+           <div class=" bg_mandate">
+           <h1>{newsItem.title}</h1>
+           <h2>{newsItem.teaser}</h2>
+           
+                  <f:format.html>{newsItem.bodytext}</f:format.html>  
+                                    </div>
+ 
+ </div>
+							    </f:then>
+  </f:if> 
+    <!--About mission-->
+       <f:if condition="{settings.templateLayout} == 13">
+    <f:then>
+ 
+       <div class="col-sm-6" style="padding-left:1px">
+           <div class="bg_mission">
+           <h1>{newsItem.title}</h1>
+           <h2>{newsItem.teaser}</h2>
+           
+                  <f:format.html>{newsItem.bodytext}</f:format.html>  
+                                    </div>
+
+ </div>
+							    </f:then>
+  </f:if> 
+  
+    <!-- agaciro box section -->
+   <f:if condition="{settings.templateLayout} == 14">
+    <f:then>
+<div class="col-sm-4"> 
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+                                    <div class="article-content_Agaciro" style="min-height: 270px;">
+                                        <h5>{newsItem.title}</h5>
+                                     {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                                    
+                                        <div class="sp-btn" style="margin-top:20px">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">LEARN MORE<i class="fa fa-angle-right">&nbsp;</i> </n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+							    </f:then>
+  </f:if> 
+  
+  
+  
+   <!-- History related box section -->
+   <f:if condition="{settings.templateLayout} == 15">
+    <f:then>
+<div class="col-sm-6 historyrelated "> 
+<div class="col-sm-6 historyrelated-size"> 
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+  </div>
+    </div>
+ <div class="col-sm-6 historyrelated-txt">
+                                    <div class="article-content">
+                                        <h5>{newsItem.title}</h5>
+                                     {newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}
+                                        <div class="sp-btn" style="margin-top: 30px;">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">LEARN MORE<i class="fa fa-angle-right">&nbsp;</i> </n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                              
+							    </f:then>
+  </f:if> 
+  
+ 
+  <!--best employee-->
+       <f:if condition="{settings.templateLayout} == 17">
+    <f:then>
+
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	  
+ </div>
+                                    <div class="article-contentemployee">
+                                        <h5>{newsItem.title}</h5>
+                                     {newsItem.teaser}
+                                        
+                                    </div>
+                                </div>
+                         
+							    </f:then>
+  </f:if> 
+  
+  
+       <!-- Membership box section -->
+   <f:if condition="{settings.templateLayout} == 18">
+    <f:then>
+<div class="col-sm-6"> 
+<div class="memberBox"> 
+<div class="col-sm-12 historyrelated-size2"> 
+                                <div class="memberLogo">
+                          
+	
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	  
+ </div>
+   </div>
+ <div class="col-sm-12 member-txt">
+                                    <div class="article-content" >
+                              <f:format.html>{newsItem.bodytext}</f:format.html>
+                                   
+                                    </div>
+                                </div>
+         </div>
+         </div>
+                  
+							    </f:then>
+  </f:if> 
+  
+
+     <!-- Unvestment box section -->
+   <f:if condition="{settings.templateLayout} == 22">
+
+    <f:then>
+
+<div class="col-sm-6 "> 
+<div class="investBox"> 
+<div class="investLogo">
+                          
+	
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	  
+ </div>
+   </div>
+ <div class="col-sm-12 invest-txt">
+                                    <div class="article-content" >
+                             {newsItem.title} 
+                                   
+                                    </div>
+                                </div>
+         </div>
+ </f:then>
+
+  </f:if> 
+
+<!-- History related box section -->
+   <f:if condition="{settings.templateLayout} == 23">
+    <f:then>
+<div class="col-sm-6 historyrelated "> 
+<div class="col-sm-6 historyrelated-size"> 
+                                <div class="article-wrapper">
+                                    <div class="article-thumb">
+	 <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+	 
+	 <f:if condition="{newsItem.mediaPreviews}">
+            <f:then>
+              <f:media class="img-responsive" file="{newsItem.mediaPreviews.0}" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.media.image.width)}" height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else:'')}" />
+            </f:then>
+            <f:else>
+              <f:if condition="{settings.displayDummyIfNoMedia}">
+                <f:image class="img-responsive" src="{settings.list.media.dummyImage}" title="" alt="" maxWidth="{settings.list.media.image.maxWidth}" maxHeight="{settings.list.media.image.maxHeight}" />
+              </f:if>
+            </f:else>
+          </f:if>   
+	 </n:link>	  
+ </div>
+  </div>
+    </div>
+ <div class="col-sm-6 news-txt">
+                                    <div class="article-content">
+                                        <h5>{newsItem.title}</h5>
+                                     <span> {newsItem.teaser}</span>
+                                     
+                                        <div class="sp-btn" style="margin-top: 30px;">
+                                          <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">Read More</n:link>	  
+                                        </div>
+                                    </div>
+                                </div>
+                          </div>
+                              
+							    </f:then>
+  </f:if> 
+
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-04-18T14:12:55Z">
+		<header>
+			<type>database</type>
+			<description>Language labels for database tables/fields belonging to extension 'df_contentslide'</description>
+			<generator>LFEditor</generator>
+			<authorName>Stefan Galinski</authorName>
+			<authorEmail>stefan@sgalinski.de</authorEmail>
+		</header>
+		<body>
+		<trans-unit id="tt_content.tx_df_contentslide_activate">
+			<source>Enable</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation">
+			<source>Select animation</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation.fade">
+			<source>Fade</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation.slideDownwards">
+			<source>Slide downwards</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_animation.slideUpwards">
+			<source>Slide upwards</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_contentslide">
+			<source>Expand/Collapse Content</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout">
+			<source>Select layout</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout.layout1">
+			<source>Layout 1</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout.layout2">
+			<source>Layout 2</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_layout.layout3">
+			<source>Layout 3</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_options">
+			<source>Options</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_options.expanded">
+			<source>Initially expanded</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_options.withAjax">
+			<source>with AJAX</source>
+		</trans-unit>
+		<trans-unit id="tt_content.tx_df_contentslide_useCustomHeader">
+			<source>Use custom header</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

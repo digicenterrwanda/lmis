@@ -1,0 +1,1 @@
+[15-Feb-2020 17:30:13 UTC] PHP Fatal error:  Cannot declare class SAV\SavCharts\Controller\DefaultController, because the name is already in use in /home1/ncbs/web/LMIS/LMIS/typo3conf/ext/sav_charts/Classes/Controller/DefaultController.php on line 251

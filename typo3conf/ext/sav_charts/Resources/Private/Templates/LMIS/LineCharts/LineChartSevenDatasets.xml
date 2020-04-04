@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<charts>		
+	<lineChart id="1" data="data#lineChartData" options="data#lineChartOptions" >
+			
+        <marker id="labelSet0">My First dataset</marker>
+        <marker id="labelSet1">My Second dataset</marker>	
+        <marker id="labelSet2">My Third dataset</marker>
+        <marker id="labelSet3">My Fourth dataset</marker>
+        <marker id="labelSet4">My Fifth dataset</marker>
+        <marker id="labelSet5">My Sixth dataset</marker>	
+        <marker id="labelSet6">My Seventh dataset</marker>
+		
+		<data id="labels">
+			January, February, March, April, May, June, July
+		</data>
+	
+		<data id="dataSet0">
+			65, 59, 80, 81, 56, 55, 40
+		</data>
+		
+		<data id="dataSet1">
+			28, 48, 40, 19, 86, 27, 90
+		</data>			
+	
+                <data id="dataSet2">
+			28, 48, 40, 19, 86, 27, 90
+		</data>
+
+                <data id="dataSet3">
+			28, 48, 40, 19, 86, 27, 90
+		</data>
+
+                <data id="dataSet4">
+			28, 48, 40, 19, 86, 27, 90
+		</data>
+
+                <data id="dataSet5">
+			28, 48, 40, 19, 86, 27, 90
+		</data>
+
+                <data id="dataSet6">
+			28, 48, 40, 19, 86, 27, 90
+		</data>
+
+		<data id="set0">
+            <item key="label" value="marker#labelSet0" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(2,27,78,0.2)</item>
+            <item key="borderColor">rgba(2,27,78,1)</item>
+            <item key="pointColor">rgba(2,27,78,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(2,27,78,1)</item>
+            <item key="data" value="data#dataSet0" />
+		</data>	
+	
+		<data id="set1">
+            <item key="label" value="marker#labelSet1" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(153,103,3,0.2)</item>
+            <item key="borderColor">rgba(153,103,3,1)</item>
+            <item key="pointColor">rgba(153,103,3,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(153,103,3,1)</item>            
+            <item key="data" value="data#dataSet1" />
+		</data>		
+		<data id="set2">
+            <item key="label" value="marker#labelSet2" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(3,91,153,0.2)</item>
+            <item key="borderColor">rgba(3,91,153,1)</item>
+            <item key="pointColor">rgba(3,91,153,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(3,91,153,1)</item>            
+            <item key="data" value="data#dataSet2" />
+		</data>
+		<data id="set3">
+            <item key="label" value="marker#labelSet3" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(153,3,91,0.2)</item>
+            <item key="borderColor">rgba(153,3,91,1)</item>
+            <item key="pointColor">rgba(153,3,91,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(153,3,91,1)</item>            
+            <item key="data" value="data#dataSet3" />
+		</data>
+		<data id="set4">
+            <item key="label" value="marker#labelSet4" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(91,153,3,0.2)</item>
+            <item key="borderColor">rgba(91,153,3,1)</item>
+            <item key="pointColor">rgba(91,153,3,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(91,153,3,1)</item>            
+            <item key="data" value="data#dataSet4" />
+		</data>
+		<data id="set5">
+            <item key="label" value="marker#labelSet5" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(3,128,153,0.2)</item>
+            <item key="borderColor">rgba(3,128,153,1)</item>
+            <item key="pointColor">rgba(3,128,153,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(3,128,153,1)</item>            
+            <item key="data" value="data#dataSet5" />
+		</data>
+		<data id="set6">
+            <item key="label" value="marker#labelSet6" />
+            <item key="fill">false</item>
+            <item key="backgroundColor">rgba(4,191,228,0.2)</item>
+            <item key="borderColor">rgba(4,191,228,1)</item>
+            <item key="pointColor">rgba(4,191,228,1)</item>
+            <item key="pointBackgroundColor">#fff</item>
+            <item key="pointHoverBackgroundColor">rgba(4,191,228,1)</item>            
+            <item key="data" value="data#dataSet6" />
+		</data>
+
+		<data id="dataSets">
+			<item key="0" value="data#set0" />
+			<item key="1" value="data#set1" />
+			<item key="2" value="data#set2" />
+			<item key="3" value="data#set3" />
+			<item key="4" value="data#set4" />
+			<item key="5" value="data#set5" />
+			<item key="6" value="data#set6" />
+		</data>		
+	
+		<data id="lineChartData">
+			<item key="labels" value="data#labels" />			
+			<item key="datasets" value="data#dataSets" />		
+		</data>	
+		
+        <data id="lineChartOptions">
+        </data>		
+		
+	</lineChart>
+</charts>

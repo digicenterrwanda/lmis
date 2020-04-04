@@ -1,0 +1,7 @@
+page.includeCSS.dfcontentslide = {$plugin.tx_df_contentslide.css}
+page.includeJSFooter.dfcontentslide = {$plugin.tx_df_contentslide.js}
+
+plugin.tx_df_contentslide.settings {
+	headerViewHelper = {$plugin.tx_df_contentslide.headerViewHelper}
+	emptyHeaderText = {$plugin.tx_df_contentslide.emptyHeaderText}
+}

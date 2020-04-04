@@ -1,0 +1,7 @@
+plugin.tx_koningbootstrapcarousel {
+    view {
+        templateRootPath = EXT:koning_bootstrap_carousel/Resources/Private/Templates
+        partialRootPath = EXT:koning_bootstrap_carousel/Resources/Private/Partials
+        layoutRootPath = EXT:koning_bootstrap_carousel/Resources/Private/Layouts
+    }
+}

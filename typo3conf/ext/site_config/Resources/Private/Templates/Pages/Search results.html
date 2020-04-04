@@ -1,0 +1,20 @@
+<!--Header starts----->
+
+<f:render partial="Header-search" arguments="{_all}" />
+
+<!-- Header ends---->
+
+    <section class="main-content">
+        <div class="container">
+            <div class="search-page">
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.contentmain')}">
+                    <f:then>
+                            <f:cObject typoscriptObjectPath="lib.contentmain" /> 
+                    </f:then>
+                </f:if>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Starts here -->
+    <f:render partial="Footer" arguments="{_all}" />

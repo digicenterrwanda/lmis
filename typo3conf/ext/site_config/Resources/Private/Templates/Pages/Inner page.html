@@ -1,0 +1,84 @@
+<!--Header starts----->
+
+<f:render partial="Header" arguments="{_all}" />
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=280331765782209&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Header ends---->
+<section class="main-content innbg <f:cObject typoscriptObjectPath="lib.inntitre" />box" style="max-width:1820px;margin-right: auto;margin-left: auto;">
+    
+    <div class="ce-textpic ce-center ce-above">
+        <figure class="image">
+            <img class="image-embed-item" src="typo3conf/ext/site_config/Resources/Public/images/headall.jpg" alt="" width="1820" height="161">
+            </figure>
+            </div>
+
+        <div class="container">
+            <div class="row">
+        <h1 class="titlesub "><f:cObject typoscriptObjectPath="lib.inntitre" /> </h1>
+         </div>
+              </div>
+    </section>
+    
+    <section class="main-content <f:cObject typoscriptObjectPath="lib.inntitre" />2" style="background: #F4F5F8;">
+        <div class="container bgwhite">
+                   <div class="row">
+                       <div class="col-sm-9">
+                    <div class=" article-bg">
+             
+                      <f:if condition="{f:cObject(typoscriptObjectPath:'lib.contentmains')}">
+                <f:then>
+                        <f:cObject typoscriptObjectPath="lib.contentmains" /> 
+                </f:then>
+            </f:if>
+            
+                    </div>
+     </div>
+     <div class="col-sm-3">
+       <f:if condition="{f:cObject(typoscriptObjectPath:'lib.field_related_links')}">
+               
+             <f:then>
+                        <f:cObject typoscriptObjectPath="lib.field_related_links" /> 
+                </f:then>
+            </f:if>
+     </div>
+              </div>
+
+        </div>
+    </section>
+    
+    
+        <section class="main-content <f:cObject typoscriptObjectPath="lib.inntitre" />" >
+        <div class="container">
+                   <div class="row">
+                    <div class= "article-bg">
+             
+                      <f:if condition="{f:cObject(typoscriptObjectPath:'lib.contentmainsection')}">
+               
+             <f:then>
+                        <f:cObject typoscriptObjectPath="lib.contentmainsection" /> 
+                </f:then>
+            </f:if>
+            
+                    </div>
+    
+              </div>
+
+        </div>
+    </section>
+    
+          
+    
+    
+    
+    
+     
+    <!-- Footer Section Starts here -->
+    <f:render partial="Footer" arguments="{_all}" />
+        
+    <script src="typo3conf/ext/site_config/Resources/Public/js/jquery_004.js" type="text/javascript"></script>
+    <script src="typo3conf/ext/site_config/Resources/Public/js/owl.js" type="text/javascript"></script>

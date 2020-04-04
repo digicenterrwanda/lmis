@@ -1,0 +1,23 @@
+  # cat=basic; type=string; label=No access: filenames not allowed to access: (uses PCRE regex syntax).
+no_access = ^\.ht
+
+  # cat=basic; type=boolean; label=Show hidden files: Show files starting with '.', (works on Linux/UNIX).
+show_hidden = 1
+
+  # cat=basic; type=boolean; label=Show thumbs: show thumbs for image files.
+show_thumbs = 1
+
+  # cat=basic; type=string; label=Textarea height: The height of the textarea in edit mode. 
+textarea_height =  30
+
+  # cat=basic; type=boolean; label=Autohighlight: Automatically highlight code files if file extension is recognized.
+auto_highlight = 1
+
+  # cat=basic; type=boolean; label=Disable text-preview: If this is unchecked the content of the file will not be displayed under the textarea when editing.
+disable_text = 1
+
+  # cat=basic; type=string; label=Editable file extensions: the edit-function will be available for these file types (uses POSIX syntax)
+editable_ext = \.phpcron$|\.ts$|\.tmpl$|\.txt$|\.php$|\.php3$|\.phtml$|\.inc$|\.sql$|\.pl$|\.htm$|\.html$|\.shtml$|\.dhtml$|\.xml$|\.js$|\.css$|\.cgi$|\.cpp$\.c$|\.cc$|\.cxx$|\.hpp$|\.h$|\.pas$|\.p$|\.java$|\.py$|\.sh$\.tcl$|\.tk$
+
+  #cat=basic; type=string; label=Path to php executable: The path to a php executable. You may need to set this in order to check the syntax of php-scripts.
+php_path = php

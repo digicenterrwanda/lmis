@@ -1,0 +1,25 @@
+{
+    "name": "yolftypo3/sav-charts",
+    "description": "Extension which displays charts using the charts.js library",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+        "name": "Laurent Foulloy",
+        "email": "yolf.typo3@orange.fr",
+        "role": "Developer"
+        }
+    ],
+    "replace": {
+        "sav_charts": "self.version",
+        "typo3-ter/sav-charts": "self.version"
+    },
+    "require": {
+        "typo3/cms-core": ">=6.2,<9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YolfTypo3\\SavCharts\\": "Classes/"
+        }
+    }
+}

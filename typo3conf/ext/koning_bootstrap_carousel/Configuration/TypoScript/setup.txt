@@ -1,0 +1,53 @@
+plugin.tx_koningbootstrapcarousel {
+    view {
+        templateRootPaths {
+            10 = {$plugin.tx_koningbootstrapcarousel.view.templateRootPath}
+        }
+        partialRootPaths {
+            10 = {$plugin.tx_koningbootstrapcarousel.view.partialRootPath}
+        }
+        layoutRootPaths {
+            10 = {$plugin.tx_koningbootstrapcarousel.view.layoutRootPath}
+        }
+    }
+
+    _CSS_DEFAULT_STYLE (
+        .koning-bootstrap-carousel .item {
+            height: 600px;
+            background-repeat: no-repeat;
+        }
+        .koning-bootstrap-carousel .item.cover {
+            background-size: cover;
+        }
+        .koning-bootstrap-carousel .item.contain {
+            background-size: contain;
+        }
+        .koning-bootstrap-carousel .item.left-top {
+            background-position: left top;
+        }
+        .koning-bootstrap-carousel .item.left-center {
+            background-position: left center;
+        }
+        .koning-bootstrap-carousel .item.left-bottom {
+            background-position: left bottom;
+        }
+        .koning-bootstrap-carousel .item.right-top {
+            background-position: right top;
+        }
+        .koning-bootstrap-carousel .item.right-center {
+            background-position: right center;
+        }
+        .koning-bootstrap-carousel .item.right-bottom {
+            background-position: right bottom;
+        }
+        .koning-bootstrap-carousel .item.center-top {
+            background-position: center top;
+        }
+        .koning-bootstrap-carousel .item.center-center {
+            background-position: center center;
+        }
+        .koning-bootstrap-carousel .item.center-bottom {
+            background-position: center bottom;
+        }
+    )
+}
