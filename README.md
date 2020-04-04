@@ -1,6 +1,8 @@
 LMIS
 =========
-LMIS is a website that shows quality labour market statistics used by the Government of Rwanda to inform, monitor national employment policies/programs and initiated the creation of a computerized labour managment information system.
+
+The LMIS provides quantitative and qualitative information and intelligence on the labour market that
+can assist various stakeholders in making informed plans, choices, and decisions. 
  
 This LMIS website was developed using TYPO3 Content Management System.
 
@@ -112,14 +114,6 @@ yourself involved.
 
 ### Exchange information, ask questions, get help
 
-Slack is nice for short discussions, but when asking questions, most
-answers are lost in the noise after a few minutes. To let everyone
-profit from an answer, we recommend to ask questions on StackOverflow.
-If you like, you can then post a link into the corresponding Slack
-channel to raise attention. And please, do not forget to tag your
-questions correctly with `TYPO3` (and possibly other tags like `Fluid`
-or `Extbase`).
-
 * [StackOverflow questions tagged "TYPO3"](https://stackoverflow.com/questions/tagged/typo3)
 
 The community and all TYPO3 teams communicate through newsgroups, which can
@@ -134,6 +128,6 @@ provide access to the same communication channels:
 Copyright
 --------
 
-This document was created by Tech Click Ltd.
+This project was developed by Tech Click Ltd for Rwanda Development Board (RDB) under Digital solutions for sustainable development (DSSD) - GIZ contract. 
 
 Written by Jeanne Yamfashije, Samuel Ishimwe and others.
